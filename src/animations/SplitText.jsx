@@ -14,7 +14,6 @@ const SplitText = ({
   onLetterAnimationComplete,
 }) => {
   const words = text.split(" ").map((word) => word.split(""));
-
   const letters = words.flat();
   const [inView, setInView] = useState(false);
   const ref = useRef();
@@ -25,15 +24,24 @@ const SplitText = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(ref.current);
+          if (ref.current) {
+            observer.unobserve(ref.current);
+          }
         }
       },
       { threshold, rootMargin }
     );
 
-    observer.observe(ref.current);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
-    return () => observer.disconnect();
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+      observer.disconnect();
+    };
   }, [threshold, rootMargin]);
 
   const springs = useSprings(

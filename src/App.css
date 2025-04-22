@@ -613,16 +613,23 @@ button:hover {
     font-size: small;
     margin: 1px;
   }
-  .footer-div{
+
+  .footer-div {
     flex-wrap: wrap;
   }
-  .footer-div img{
+
+  .footer-div img {
     height: 30px;
     width: 30px;
   }
-  .footer-container{
+
+  .footer-container {
     flex-direction: column;
     gap: 10px;
+  }
+
+  section {
+    padding-top: 30px;
   }
 }
 
@@ -630,6 +637,10 @@ button:hover {
 @media (min-width: 400px) and (max-width: 600px) {
   body {
     cursor: default !important;
+  }
+
+  section {
+    padding-top: 30px;
   }
 
   .my-cursor,
