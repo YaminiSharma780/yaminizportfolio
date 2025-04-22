@@ -20,10 +20,10 @@ export default function MyVerticalTimeline() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">HCL Technologies</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-title">HCL Technologies</h4>
+          <h5 className="vertical-timeline-element-subtitle">
             Noida, Uttar Pradesh
-          </h4>
+          </h5>
           <p>
             Contributed to Europe region Bank Project. Experienced in tools like
             Jira, Git, GitHub, Bitbucket, and Confluence. Writing clean and
@@ -42,8 +42,8 @@ export default function MyVerticalTimeline() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">HCL Technologies</h3>
-          <h4 className="vertical-timeline-element-subtitle">Remote</h4>
+          <h4 className="vertical-timeline-element-title">HCL Technologies</h4>
+          <h5 className="vertical-timeline-element-subtitle">Remote</h5>
           <p>
             Developed an Android e-commerce app using Flutter with database
             connectivity. Integrated APIs and ensured a user-friendly interface.
@@ -60,10 +60,10 @@ export default function MyVerticalTimeline() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">HCL Technologies</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-title">HCL Technologies</h4>
+          <h5 className="vertical-timeline-element-subtitle">
             Noida, Uttar Pradesh
-          </h4>
+          </h5>
           <p>
             Designed and Developed application based on server technology in the
             area of Cryptography using relevant algorithms. Built the

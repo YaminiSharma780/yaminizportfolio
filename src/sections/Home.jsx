@@ -1,7 +1,11 @@
 import Aurora from "../animations/Aurora";
 import SplitText from "../animations/SplitText";
+import { FaFileAlt, FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import useMyTheme from "../hooks/useMyTheme";
 
 export default function Home() {
+  const [mode, setMode] = useMyTheme();
   return (
     <Aurora
       // colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
@@ -10,7 +14,7 @@ export default function Home() {
       amplitude={1.2}
       speed={1}
     >
-      <div className="home-container">
+      <div className={`home-container ${mode ? "dark" : ""}`}>
         <div className="home-img-div">
           <div className="home-img-div-div">
             <img className="home-img" src="../assets/profile2.png" />
@@ -23,7 +27,7 @@ export default function Home() {
               href="https://drive.google.com/file/d/1_rzmhvRuikyN56ebC5_Mg9ijouqeLRmT/view?usp=sharing"
               download
             >
-              Resume
+              <FaFileAlt size={25} />
             </a>
             <a
               target="_blank"
@@ -31,7 +35,7 @@ export default function Home() {
               id="email"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=reachmeout005@gmail.com"
             >
-              Email
+              <MdEmail size={25} />
             </a>
             <a
               target="_blank"
@@ -39,7 +43,7 @@ export default function Home() {
               id="linkedin"
               href="https://www.linkedin.com/in/yamini-sharma-780/"
             >
-              Linkedin
+              <FaLinkedin size={25} />
             </a>
             <a
               target="_blank"
@@ -47,7 +51,7 @@ export default function Home() {
               id="github"
               href="https://github.com/YaminiSharma780"
             >
-              Github
+              <FaGithub size={25} />
             </a>
             <a
               target="_blank"
@@ -55,7 +59,7 @@ export default function Home() {
               href="https://wa.me/919457961535"
               id="whatsapp"
             >
-              Whatsapp
+              <FaWhatsapp size={25} />
             </a>
           </div>
         </div>

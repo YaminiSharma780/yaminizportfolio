@@ -40,7 +40,7 @@ export default function Projects() {
                 <img src={project.image} />
               </div>
               <div className="project-text">
-                <h2>{project.title}</h2>
+                <h3>{project.title}</h3>
                 <div className="project-tech">
                   {project.tech.map((t, i) => {
                     return <div key={i}>{t}</div>;

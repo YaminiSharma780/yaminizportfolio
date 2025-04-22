@@ -6,7 +6,7 @@ export default function Services() {
       <h1>Services</h1>
       <div className="services-list">
         <div className="service-card">
-          <h2>$8 Hour</h2>
+          <h3>$8 Hour</h3>
           <p>
             I have developed numerous responsive and animated frontend web apps
             using React, leveraging the power of Tailwind, HTML, and CSS. My
@@ -29,7 +29,7 @@ export default function Services() {
           </Link>
         </div>
         <div className="service-card selected">
-          <h2>$160 Week</h2>
+          <h3>$160 Week</h3>
           <p>
             I have built fullstack web applications with a killer frontend using
             React, Redux, and Tailwind, paired with a robust backend powered by
@@ -52,7 +52,7 @@ export default function Services() {
           </Link>
         </div>
         <div className="service-card">
-          <h2>$500 Month</h2>
+          <h3>$500 Month</h3>
           <p>
             I can bring your web app idea to life by designing intuitive user
             interfaces in Figma and delivering fullstack development using the
